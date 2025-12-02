@@ -39,15 +39,13 @@ Example:
    hadoop fs -put file1.txt file2.txt /user/hadoop/  # multiple files
    
    hadoop fs -put file1.txt file2.txt /user/hadoop/
-
-
    ```
 	-  `-f` overwrite existing file if exists
 	- `-p` create parent directory if does not exist, perserve timestamp, permissions, ownership
 	- `-u` upload file only if dst is older
  5. `hadoop fs -copyFromLocal <src> <dst> ` copy from local to hdfs
  6. `hadoop fs -copyToLocal <src-hadoop-path> <dst-local-path>` from hdfs to local fs
- 7. `hadoop fs -put <src-hadoop> <dst-local>` - from hdfs to local
+ 7. `hadoop fs -get <src-hadoop> <dst-local>` - from hdfs to local
  8. `hadoop fs -rm /path/to/file.txt`
 	 - `hadoop fs -rm UKUS18nov/venoth/*.txt` delete all txt files
 	 - `-r` can add to delete a directory and its contents recursively 
